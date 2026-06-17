@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aaliakhera | AI Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff;
+color:#111;
+line-height:1.7;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 2px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#111;
+font-weight:600;
+}
+
+.resume-btn{
+background:#111;
+color:#fff!important;
+padding:10px 18px;
+border-radius:30px;
+}
+
+section{
+padding:100px 8%;
+}
+
+.dark{
+background:#0a0a0a;
+color:white;
+}
+
+.light{
+background:#f7f7f7;
+}
+
+.hero{
+padding-top:150px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+min-height:100vh;
+}
+
+.hero img{
+width:350px;
+height:350px;
+border-radius:30px;
+object-fit:cover;
+box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+.hero h1{
+font-size:72px;
+line-height:1;
+}
+
+.hero p{
+margin-top:20px;
+color:#bbb;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:40px;
+}
+
+.stat{
+background:#151515;
+padding:25px;
+border-radius:20px;
+text-align:center;
+}
+
+.stat h2{
+color:#8b5cf6;
+font-size:38px;
+}
+
+.light .stat{
+background:white;
+}
+
+.section-title{
+font-size:48px;
+margin-bottom:40px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 15px;
+border-radius:50px;
+background:#222;
+color:#fff;
+margin:5px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.dark .card{
+background:#171717;
+color:white;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+background:#ddd;
+}
+
+.card-content{
+padding:25px;
+}
+
+.publication{
+background:white;
+padding:30px;
+margin-bottom:20px;
+border-radius:20px;
+border-left:5px solid #8b5cf6;
+}
+
+.contact-box{
+background:white;
+padding:30px;
+border-radius:20px;
+}
+
+footer{
+background:black;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+nav ul{
+display:none;
+}
+
+.hero img{
+width:250px;
+height:250px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Aalia Khera</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">AI Projects</a></li>
+s<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="resume.pdf" target="_blank" class="resume-btn">Resume</a></li></ul>
+</nav>
+
+<section id="home" class="dark hero">
+
+<div>
+<h1>AALIA KHERA<br></h1>
+
+<h3 style="margin-top:20px;">Learner • Curious • Creative</h3>
+
+<p>
+Driven by curiosity, powered by creativity and inspired by learning. I believe in exploring, creating and constantly growing into a better version of myself.
+</p>
+
+
+</div>
+
+<div style="text-align:center;">
+<img src="YOUR_PHOTO.jpg" alt="Profile Photo" style="max-width:300px; height:auto;">
+</div>
+
+</section>
+
+<section id="about" class="light">
+
+<h2 class="section-title">About Me</h2>
+
+<div style="text-align: justify; line-height: 1.8;">
+
+    <p style="margin-bottom: 20px;">
+     Hi! I'm Aalia, a 14-year-old student currently in 9th grade. I am a curious, creative and enthusiastic learner who enjoys expressing myself through art and finding inspiration in everyday life. I love listening to music, designing things creatively and bringing my ideas to life. I enjoy learning new things and always look for opportunities to grow both academically and personally.  
+    </p>
+
+    <p style="margin-bottom: 20px;">
+        Looking towards the future, I aspire to become an architect because it perfectly combines creativity, imagination and design. Art will always remain one of my biggest passions, and I hope to continue developing it while exploring new skills along the way. My dream is to become successful, travel to places around the world and build a future filled with creativity, learning and meaningful experiences.
+    </p>
+
+   
+</div>
+<br>
+
+<span class="badge">AI Education</span>
+<span class="badge">Generative AI</span>
+<span class="badge">Research</span>
+<span class="badge">Innovation</span>
+<span class="badge">Digital Transformation</span>
+
+</section>
+
+<section id="portfolio" class="dark">
+
+<h2 class="section-title">AI Projects Portfolio</h2>
+
+<div class="projects">
+
+<div class="card">
+<img src="project1.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Google Opal Mini Apps</h3>
+<p style="text-align: justify;">
+Made mini AI applications using Google Opal, including a Virtual Try-On solution for AI-powered apparel visualization and an Exam Path Finder to help students discover suitable academic and career pathways through intelligent recommendations.
+</p></div>
+</div>
+
+<div class="card">
+<img src="project2.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Gemini Gems AI Apps</h3>
+<p style="text-align: justify;">
+Developed an AI-powered Question Paper Maker using Gemini Gems, enabling automated generation of customized question papers based on subject, difficulty level, learning outcomes, and assessment requirements.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project3.jpg">
+<div class="card-content">
+<h3 style="color: orange;">AI Voice Agents</h3>
+<p style="text-align: justify;">
+Built AI Voice Agents using Vapi AI, enabling natural voice-based conversations, automated responses, and intelligent task handling through advanced speech and language AI technologies.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project4.jpg">
+<div class="card-content">
+<h3 style="color: red;">Game Projects</h3>
+<p style="text-align: justify;">
+Designed and developed an interactive game using Google AI Studio, integrating generative AI capabilities to create engaging gameplay experiences and intelligent user interactions.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project5.jpg">
+<div class="card-content">
+<h3 style="color: red;">NotebookLM Projects</h3>
+<p style="text-align: justify;">
+Explored Google NotebookLM to analyze documents, generate insights, create summaries, and interact with information through AI-powered research and knowledge management capabilities.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project6.jpg">
+<div class="card-content">
+<h3 style="color: red;">Careers after 12th Portal</h3>
+<p style="text-align: justify;">
+Developed a comprehensive Careers After 12th Portal that maps and presents diverse higher education, entrance examination, vocational, and career opportunities available to Grade 12 students across India.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project7.jpg">
+<div class="card-content">
+<h3 style="color: yellow;">Teachable Machine</h3>
+<p style="text-align: justify;">
+Built and trained a simple machine learning classification model using Google Teachable Machine to recognize and categorize inputs without writing code, demonstrating the fundamentals of AI model development.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project8.jpg">
+<div class="card-content">
+<h3 style="color: yellow;">AI Music Creation</h3>
+<p style="text-align: justify;">
+Created AI-generated music using the FlowMusic app by transforming text prompts into original songs, exploring generative AI for music composition, lyrics, and audio production.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project9.jpg">
+<div class="card-content">
+<h3 style="color: yellow;">AI Video Creation</h3>
+<p style="text-align: justify;">
+Created AI-powered videos by leveraging Google Vids, Gemini, and ChatGPT for script generation, storyboarding, visual design, and automated video production workflows.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project10.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Narration using Fish Audio</h3>
+<p style="text-align: justify;">
+Created AI-generated sound effects, music, and voice narrations using Fish Audio, demonstrating the use of generative AI for audio production, storytelling, and multimedia content creation.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project11.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Github Projects</h3>
+<p style="text-align: justify;">
+Used GitHub to host and publish multiple HTML projects online, enabling live website deployment, version control, and seamless sharing of web applications on the internet.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project12.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Google Mixboard Projects</h3>
+<p style="text-align: justify;">
+Created multiple AI projects on Google Mixboard, experimenting with generative AI tools, workflows, and interactive experiences to solve real-world problems and enhance productivity.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="project13.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Gamma AI</h3>
+<p style="text-align: justify;">
+Developed professional presentations with Gamma AI, using AI-assisted design and content generation features.
+</div>
+</div>
+
+<div class="card">
+<img src="project14.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Canva AI</h3>
+<p style="text-align: justify;">
+Designed creative visual content and project materials using Canva AI's intelligent design and content-generation tools.
+</div>
+</div>
+
+<div class="card">
+<img src="project15.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Adobe Firefly</h3>
+<p style="text-align: justify;">
+Used Adobe Firefly to generate AI-powered images, graphics, and creative assets for digital projects.
+</div>
+</div>
+
+<div class="card">
+<img src="project16.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Microsoft AI Skill Fest</h3>
+<p style="text-align: justify;">
+Participated in the online Microsoft AI Skill Fest, engaging in AI-focused learning activities and expanding my understanding of modern AI technologies and applications.
+</div>
+</div>
+
+<div class="card">
+<img src="project17.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Fish Audio</h3>
+<p style="text-align: justify;">
+Used Fish Audio to generate AI-powered sound effects, music tracks, and voice narrations for creative and multimedia projects.
+</div>
+</div>
+
+<div class="card">
+<img src="project18.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Multiple HTML Pages, Stickers, Images, and Prompts using ChatGPT</h3>
+<p style="text-align: justify;">
+Leveraged ChatGPT to design web pages, generate creative digital content, and craft effective AI prompts for various projects.
+</div>
+</div>
+
+<div class="card">
+<img src="project19.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Created Webpages on Google Sites</h3>
+<p style="text-align: justify;">
+Designed and published websites using Google Sites to learn website creation, content organization, and online publishing.
+</div>
+</div>
+
+<div class="card">
+<img src="project20.jpg">
+<div class="card-content">
+<h3 style="color: orange;">Explored Innovative Educational and Technology Websites</h3>
+<p style="text-align: justify;">
+Explored platforms such as Nothing-to-Watch, ZPeriod, World Monitor, and PhET Simulations to learn about technology, data visualization, and interactive educational tools.
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+</section>
+
+<section id="publications" class="dark">
+
+<h2 class="section-title">Hobbies</h2>
+
+<div class="publication">
+<h3 style="color:black;">Art</h3>
+<p style="color:gray;">
+  I love expressing my creativity through art and turning simple ideas into something unique and meaningful.  
+</p></div>
+
+<div class="publication">
+<h3 style="color:black;">Music</h3>
+<p style="color:gray;">
+    Listening to music helps me relax, lifts my mood and inspires me every day.
+</p></div>
+
+<div class="publication">
+<h3 style="color:black;">Exploring New Things</h3>
+<p style="color:gray;">
+    I enjoy discovering new places, ideas and experiences that help me learn and grow as a person.
+</p></div>
+
+<div class="publication">
+<h3 style="color:black;">Creative Designing</h3>
+<p style="color:gray;">
+    I enjoy designing projects, arranging ideas and adding a creative touch to make things look beautiful and unique.
+    </p></div>
+
+
+</section>
+
+<section id="certifications" class="light">
+
+<h2 class="section-title" style="text-align:center; color:black;">
+    Certifications
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:30px;
+"></h2>
+
+    <div style="
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:30px;
+">
+
+    
+<div style="text-align:center;">
+        <a href="skillindia.jpg" target="_blank">
+            <img src="skillindia.jpg"
+                 alt="Skill India Certification"
+                 style="width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+        </a>
+        <h3>Skill India Certification</h3>
+    </div>
+
+
+
+<div style="text-align:center;">
+        <a href="claude-certificate.jpg" target="_blank">
+            <img src="claude_101.jpg"
+                 alt="Anthropic AI Fluency for Educators"
+                 style="width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+        </a>
+        <h3>Anthropic Claude 101</h3>
+    </div>
+
+
+<div style="text-align:center;">
+        <a href="claude-certificate.jpg" target="_blank">
+          <a href="resume.pdf" target="_blank"
+   style="
+   display:inline-block;
+   background:#ff6600;
+   color:white;
+   padding:12px 25px;
+   border-radius:8px;
+   text-decoration:none;
+   font-weight:bold;
+   font-size:16px;
+   ">
+   View CV
+</a>
+                                   <a style="width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+        </a>
+        <h3>For more certifications, Refer CV</h3>
+    </div>
+
+
+
+</div>
+
+</div>
+
+</section>
+</section>
+
+<section id="contact" class="dark">
+
+<h2 class="section-title" style="text-align:center;">Contact</h2>
+
+<div class="social-links">
+
+    <div style="text-align:center; margin-top:20px;">
+
+    
+    <a href="https://github.com/aaliakhera969-sketch" target="_blank" style="margin-right:25px;">
+        <img src="github.png" alt="GitHub" width="40">
+    </a>
+
+    
+    <a href="mailto:aaliakhera808@gmail.com" style="margin-right:25px;">
+    <img src="gmail.png" alt="Email" width="40">
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Aalia Khera | Learner • Creative • Creative |
+</footer>
+
+</body>
+</html>
